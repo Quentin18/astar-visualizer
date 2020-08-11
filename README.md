@@ -7,7 +7,7 @@ in a grid with obstacles. The heuristic function used is the
 
 It uses the [Gosu](https://github.com/gosu/gosu) game development library.
 
-![Demo](https://github.com/Quentin18/astar-visualizer/blob/master/img/demo.png)
+![Demo](https://github.com/Quentin18/astar-visualizer/blob/master/img/demo.gif)
 
 ## Install
 To install this ruby gem, use the `gem` command:
