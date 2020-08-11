@@ -44,6 +44,7 @@ It will open a window with the grid. Then:
 ## Links
 - GitHub: https://github.com/Quentin18/astar-visualizer
 - RubyGems: https://rubygems.org/gems/astar_visualizer
+- Documentation: https://www.rubydoc.info/gems/astar_visualizer/0.0.1
 
 ## Author
 [Quentin Deschamps](mailto:quentindeschamps18@gmail.com)
