@@ -5,7 +5,9 @@
 in a grid with obstacles. The heuristic function used is the
 [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry).
 
-![Demo](https://github.com/Quentin18/astar_visualizer/blob/master/img/demo.png)
+It uses the [Gosu](https://github.com/gosu/gosu) game development library.
+
+![Demo](https://github.com/Quentin18/astar-visualizer/blob/master/img/demo.png)
 
 ## Install
 To install this ruby gem, use the `gem` command:
@@ -17,6 +19,12 @@ gem install astar_visualizer
 To launch the A* Visualizer, use this command:
 ```
 astar-visualizer
+```
+
+You can also use the `irb` environment:
+```ruby
+require astar_visualizer
+AStar.new.show
 ```
 
 It will open a window with a grid. Then:
