@@ -20,21 +20,18 @@ class AStar < Gosu::Window
   # Height of the informations block in pixels.
   HEIGHT_INFO_BLOCK = 40
 
-  # Number of columns in the grid.
-  COLS = 50
-
-  # Number of lines in the grid.
-  ROWS = 50
+  # Number of squares by lines and columns in the grid.
+  DEFAULT_SIZE = 50
 
   #
   # Creates the window with its grid.
   #
-  def initialize
+  def initialize(size=DEFAULT_SIZE)
     super(SIZE_GRID, SIZE_GRID + HEIGHT_INFO_BLOCK, false)
     self.caption = 'A* Pathfinding Visualizer'
     @font = Gosu::Font.new(28)
     @message = 'Choose the start node.'
-    @grid = Grid.new(self, COLS, ROWS, SIZE_GRID)
+    @grid = Grid.new(self, size, size, SIZE_GRID)
     @start = @end = nil
     @needs_reset = false
   end

@@ -1,4 +1,18 @@
 #!/usr/bin/env ruby
 
 require 'astar_visualizer'
-AStar.new.show
+MIN_SIZE = 10
+MAX_SIZE = 100
+
+if ARGV.empty?
+  window = AStar.new
+else
+  size = ARGV.first.to_i
+  if size < MIN_SIZE || size > MAX_SIZE
+    puts "Please choose a size between #{MIN_SIZE} and #{MAX_SIZE}."
+    return
+  end
+  window = AStar.new(size)
+end
+
+window.show

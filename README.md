@@ -23,11 +23,17 @@ astar-visualizer
 
 You can also use the `irb` environment:
 ```ruby
-require astar_visualizer
+require 'astar_visualizer'
 AStar.new.show
 ```
 
-It will open a window with a grid. Then:
+You can also choose the size of the grid:
+```
+astar-visualizer SIZE
+```
+SIZE must be a number between 10 and 100 (default: 50).
+
+It will open a window with the grid. Then:
 
 1. Left click on a node to choose the start node.
 2. Left click on another node to choose the end node.
