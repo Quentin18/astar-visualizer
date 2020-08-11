@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'astar_visualizer'
+AStar.new.show
